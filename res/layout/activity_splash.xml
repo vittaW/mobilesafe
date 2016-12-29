@@ -6,11 +6,39 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.mobilesafe.app.SplashActivity" >
+    tools:context="com.mobilesafe.app.SplashActivity" 
+    android:background="@drawable/bg_splash">
 
     <TextView
+        android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="Welcome to my App!"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:textSize="25dp" 
+        android:shadowColor="#e00"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"/>
+    
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+    
+    <ProgressBar 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_version"
+        android:layout_centerHorizontal="true"/>
+    
+    
+    
+    
 
 </RelativeLayout>
